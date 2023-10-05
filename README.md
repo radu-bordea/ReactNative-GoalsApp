@@ -1,1 +1,5 @@
 # ReactNative-GoalsApp
+
+ - npm install @react-native-async-storage/async-storage
+
+
