@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { StyleSheet, View, FlatList, Button } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -64,7 +65,7 @@ export default function App() {
   return (
     <>
       <StatusBar style="light" />
-      <View style={styles.appContainer}>
+      <LinearGradient colors={["wheat", "blue"]} style={styles.appContainer}>
         <Button
           title="Add New Goal"
           color={"#7f2ceb"}
@@ -93,7 +94,7 @@ export default function App() {
             alwaysBounceVertical={false}
           />
         </View>
-      </View>
+      </LinearGradient>
     </>
   );
 }
@@ -103,7 +104,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     paddingHorizontal: 16,
-    backgroundColor: "#1e085a",
   },
 
   goalsContainer: {
